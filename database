@@ -1,0 +1,10 @@
+CREATE DATABASE userdatabase;
+USE userdatabase;
+
+CREATE TABLE tblusers (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    FullName VARCHAR(255) NOT NULL,
+    EmailId VARCHAR(255) NOT NULL UNIQUE,
+    ContactNo VARCHAR(15) NOT NULL,
+    Password VARCHAR(255) NOT NULL
+);
